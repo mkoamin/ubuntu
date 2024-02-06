@@ -14,5 +14,7 @@ Note: By default, the terminal's current working directory is not included in th
 
 Press Enter to execute the script.
 
-# after run make the file chmod +x uninstall_zabbix_mysql.sh
-# execute the script by running ./uninstall_zabbix_mysql.sh
+# after run make the file 
+chmod +x uninstall_zabbix_mysql.sh
+# execute the script by running 
+./uninstall_zabbix_mysql.sh
