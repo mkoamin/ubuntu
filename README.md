@@ -13,3 +13,6 @@ sudo ./your_script.sh
 Note: By default, the terminal's current working directory is not included in the system's executable search path. That's why you need to use ./ to specify the script's location explicitly.
 
 Press Enter to execute the script.
+
+# after run make the file chmod +x uninstall_zabbix_mysql.sh
+# execute the script by running ./uninstall_zabbix_mysql.sh
