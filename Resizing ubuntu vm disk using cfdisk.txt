@@ -1,0 +1,14 @@
+- cfdisk
+
+check the free spaces are available means FREE  20Gib
+select the partition u want to resize on it means /dev/sda3
+
+choose resize button and write the remaining free size on it and  select write button
+
+now lsblk command will display the resized size
+but the df -h command will not because of not resizing the filesystem so 
+
+now resizing the filesystem using below command
+sudo resize2fs /dev/sda3
+
+now check both lsblk and df -h command have same result with resized value.
