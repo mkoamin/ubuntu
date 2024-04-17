@@ -1,0 +1,40 @@
+-ip a
+-sudo nano /etc/netplan/00-installer-config.yaml 
+network:
+ethernets:
+  enp1s0:
+    addresses:
+      - 192.168.1.X/24
+    gateway4: 
+      addresses: 192.168.1.1
+  enp7s0:su
+    addresses:
+      - 172.16.101.X/24
+    gateway4: 
+      addresses: 172.16.101.1
+version: 2
+-sudo netplan apply
+-ping 8.8.8.8
+- adduser sysadmin
+- usermod -aG sudo sysadmin 
+- sudo su sysadmin
+-apt update
+-apt upgrade
+-apt install qemu-guest-agent
+
+*if to change password
+-sudo passwd sysadmin
+
+*To enable Remote Desktop Protocol (RDP) on Ubuntu,you can use the xrdp package.
+sudo apt update
+sudo apt upgrade
+sudo apt install xrdp
+sudo systemctl start xrdp
+sudo systemctl enable xrdp
+echo "gnome-session" > ~/.xsession
+sudo ufw allow 3389
+sudo ufw enable
+sudo ufw reload
+sudo xrdp status
+sudo ufw status
+sudo reboot
