@@ -1,4 +1,4 @@
-- cfdisk
+write cfdisk using sudo previlage
 
 check the free spaces are available means FREE  20Gib
 select the partition u want to resize on it means /dev/sda3
